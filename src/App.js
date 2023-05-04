@@ -5,19 +5,19 @@ const App = () => {
   const categories = [
     {
       id: 1,
-      title: 'Hats'
+      title: 'Hats',
     },
     {
       id: 1,
-      title: 'Jackets'
+      title: 'Jackets',
     },
     {
       id: 1,
-      title: 'Shoes'
+      title: 'Sneakers',
     },
     {
       id: 1,
-      title: 'Womens'
+      title: 'Womens',
     },
     {
       id: 1,
@@ -29,6 +29,7 @@ const App = () => {
     <div className="categories-container">
       {categories.map(({title}) => (
       <div className="category-container">
+        <div className='background-image' />
         <div className="category-body-container">
           <h2>{title}</h2>
           <p>Shop Now</p>
