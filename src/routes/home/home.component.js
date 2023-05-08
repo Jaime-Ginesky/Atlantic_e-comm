@@ -1,4 +1,4 @@
-import CategoryMenu from './components/category-menu/categoryMenu';
+import CategoryMenu from '../../components/category-menu/categoryMenu';
 
 const Home = () => {
 
