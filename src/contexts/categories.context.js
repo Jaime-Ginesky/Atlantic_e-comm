@@ -14,16 +14,13 @@ export const CategoriesProvider = ({ children }) => {
    
     useEffect(() => {
         const getCategoriesMap = async () => {
-            const categoryMap = await getCategoriesAndDocuments();
-            console.log(categoryMap);
+            const categoryMap = await getCategoriesAndDocuments('categories');
+            setCategoriesMap(categoryMap);
         }
         getCategoriesMap();
         
     }, []);
- /*    useEffect(() => {
-        addCollectionAndDocuments('categories', SHOP_DATA);
-    }, []);
-    console.log('done'); */
+
     const value = { categoriesMap };
     return (
         <CategoriesContext.Provider value ={value}> {children} </CategoriesContext.Provider>
