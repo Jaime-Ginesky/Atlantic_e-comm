@@ -8,7 +8,7 @@ import './cart-dropdown.styles.js';
 
 import CartItem from '../cart-item/cart-item.component'
 
-import { CartDropdownContainer, CartItems, EmptyMessage, Button } from './cart-dropdown.styles.js';
+import { CartDropdownContainer, CartItems, EmptyMessage, } from './cart-dropdown.styles.js';
 
 const CartDropdown = () => {
     const { cartItems } = useContext(CartContext);
@@ -21,7 +21,8 @@ const CartDropdown = () => {
     return(
         <CartDropdownContainer>
             <CartItems>
-                {cartItems.length ? (
+                {
+                cartItems.length ? (
                 cartItems.map((item) => (
                 <CartItem key = {item.id} cartItem={item} />
                 ))
