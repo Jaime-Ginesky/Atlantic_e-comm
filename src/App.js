@@ -9,8 +9,7 @@ import Checkout from './routes/checkout/checkout.component';
 
 
 const App = () => {
-
-   return (
+  return (
    <Routes>
     <Route path='/' element={<Navigation />}>
       <Route index element={<Home />} />
