@@ -20,7 +20,7 @@ export const CheckoutItemContainer = styled.div`
         export const BaseSpan = styled.span` 
             width: 23%; 
         `
-        export const Quantity = styled.span(BaseSpan)` 
+        export const Quantity = styled(BaseSpan)` 
             display: flex;
             `
         export const Arrow = styled.div` 
