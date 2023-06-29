@@ -21,7 +21,7 @@ z-index: 5;
 
 ${BaseButton},
 ${GoogleSignInButton},
-${InvertedButton}, {
+${InvertedButton} {
     margin-top: auto;
 }
 `;
