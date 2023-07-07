@@ -7,7 +7,7 @@ const INITIAL_STATE = {
 }
 
 
-const userReducer = (state = INITIAL_STATE,action) => {
+ export const userReducer = (state = INITIAL_STATE,action) => {
     const { type, payload } = action;
 
     switch(type) {
@@ -21,6 +21,6 @@ const userReducer = (state = INITIAL_STATE,action) => {
                 value: state.value + 1,
             }
         default: 
-        throw new Error(`Unhandled type${type} in userReducer`);
+       return state;
     }
 }
