@@ -8,7 +8,6 @@ import { Provider } from 'react-redux';
 import './index.scss';
 import App from './App';
 
-import { CategoriesProvider } from './contexts/categories.context';
 import { CartProvider } from './contexts/cart.context';
 import { store } from './store/store';
 import reportWebVitals from './reportWebVitals';
@@ -20,11 +19,9 @@ root.render(
    <StyleSheetManager shouldForwardProp={() => true}>
     <Provider store={store}>
      <BrowserRouter>
-      <CategoriesProvider>
        <CartProvider>
         <App />
        </CartProvider>
-      </CategoriesProvider>
      </BrowserRouter>
     </Provider>  
     </StyleSheetManager>
