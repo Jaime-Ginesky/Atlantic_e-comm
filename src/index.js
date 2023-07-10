@@ -1,15 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-
 import { StyleSheetManager } from 'styled-components';
 import { Provider } from 'react-redux';
 
-import './index.scss';
 import App from './App';
-
-import { CartProvider } from './contexts/cart.context';
 import { store } from './store/store';
+
+import './index.scss';
+
 import reportWebVitals from './reportWebVitals';
 
 
@@ -19,9 +18,7 @@ root.render(
    <StyleSheetManager shouldForwardProp={() => true}>
     <Provider store={store}>
      <BrowserRouter>
-       <CartProvider>
         <App />
-       </CartProvider>
      </BrowserRouter>
     </Provider>  
     </StyleSheetManager>

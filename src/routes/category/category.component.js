@@ -11,13 +11,11 @@ from the new selector that will transform the categories array and then it runs 
 inside that this category uses which wil be an arrray */
 const Category = () => {
     const { category } = useParams();
-    console.log('render re-rendering category component');
     const categoriesMap = useSelector(selectCategoriesMap);
     const [products, setProducts] = useState(categoriesMap[category]);
    
 
     useEffect(() => {
-        console.log('effect fired calling setProducts')
         setProducts(categoriesMap[category]);
     }, [category, categoriesMap])
 
