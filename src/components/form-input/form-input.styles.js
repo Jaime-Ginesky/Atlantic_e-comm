@@ -5,7 +5,7 @@ const mainColor = 'black';
 const  shrinkLabelStyles = css` 
     top: -14px; 
     font-size: 12px; 
-    color: $main-color; 
+    color: ${mainColor}; 
     `
     
    

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import isPropValid from '@emotion/is-prop-valid';
+
 import { StyleSheetManager } from 'styled-components';
 import { Provider } from 'react-redux';
 

@@ -1,7 +1,7 @@
 import { compose, legacy_createStore, applyMiddleware } from 'redux';
 
 import { RootReducer } from './rootreducer';
-import logger from 'redux-logger';
+
 
 const loggerMiddleware = (store) => (next) => (action) => {
     if(!action.type){
@@ -16,7 +16,7 @@ const loggerMiddleware = (store) => (next) => (action) => {
     console.log('next state', store.getState());
 }
 
-const middlewares = [logger]
+const middlewares = [loggerMiddleware]
 
 const composedEnhancers = compose(applyMiddleware(...middlewares))
 
