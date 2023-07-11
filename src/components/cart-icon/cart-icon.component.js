@@ -10,9 +10,10 @@ import { CartIconContainer, ItemCount } from './cart-icon.styles';
 const CartIcon = () => {
     // const { isCartOpen, setIsCartOpen,cartCount } = useContext(CartContext);
     const dispatch = useDispatch();
-    
-    const cartCount = useSelector(selectCartCount);
+   
     const isCartOpen = useSelector(selectIsCartOpen);
+    const cartCount = useSelector(selectCartCount);
+   
 
     const toggleIsCartOpen = () => dispatch(setIsCartOpen(!isCartOpen));
 

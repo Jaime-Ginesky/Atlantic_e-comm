@@ -1,10 +1,10 @@
 import ProductCard from '../product-card/product-card.component';
-import { CpContainer, Preview } from './category-preview.styles.js';
+import { CpContainer, Preview, Title } from './category-preview.styles.js';
 
 const CategoryPreview = ({ title, products }) => (
     <CpContainer>
         <h2>
-            <span>{title.toUpperCase()}</span>
+            <Title to={title}>{title.toUpperCase()}</Title>
         </h2>
         <Preview>
             {products
