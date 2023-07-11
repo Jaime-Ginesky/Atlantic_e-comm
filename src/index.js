@@ -17,7 +17,7 @@ root.render(
   <React.StrictMode>
    <StyleSheetManager shouldForwardProp={() => true}>
     <Provider store={store}>
-     <PersistGate persistor={persistor}>
+     <PersistGate loading={null} persistor={persistor}>
        <BrowserRouter>
         <App />
        </BrowserRouter>
