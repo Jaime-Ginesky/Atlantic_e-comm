@@ -3,7 +3,7 @@ import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import logger from 'redux-logger';
 
-import { RootReducer } from './rootreducer';
+import { rootReducer } from './rootreducer';
 
 const persistConfig = {
     key:'root',
@@ -11,13 +11,16 @@ const persistConfig = {
     blacklist: ['user']
 }
 
-const persistedReducer = persistReducer(persistConfig, RootReducer);
+const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 
 
-const middlewares = [process.env.NODE_ENV === 'development' && logger]
+const middlewares = [process.env.NODE_ENV !== 'production' && logger].filter(Boolean);
 
-const composedEnhancers = compose(applyMiddleware(...middlewares))
+const composeEnhancers = (process.env.NODE_ENV !== 'production' && window && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || 
+compose;
+
+const composedEnhancers = composeEnhancers(applyMiddleware(...middlewares))
 
 export const store = legacy_createStore( persistedReducer, undefined, composedEnhancers);
 
