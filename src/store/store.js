@@ -4,6 +4,7 @@ import storage from 'redux-persist/lib/storage';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 
+
 import { rootReducer } from './rootreducer';
 
 const persistConfig = {
@@ -25,5 +26,6 @@ compose;
 const composedEnhancers = composeEnhancers(applyMiddleware(...middlewares))
 
 export const store = legacy_createStore( persistedReducer, undefined, composedEnhancers);
+
 
 export const persistor = persistStore(store);
