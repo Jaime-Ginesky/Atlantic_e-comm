@@ -46,7 +46,7 @@ const firebaseConfig = {
 
   export const db = getFirestore();
 
-  export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
+  export const addCollectionAndDocuments = async (collectionKey, objectsToAdd, field) => {
     const collectionRef = collection(db, collectionKey);
     const batch = writeBatch(db);
 
@@ -86,7 +86,7 @@ const firebaseConfig = {
             displayName,
             email,
             createdAt,
-            ...additionalInformation
+            ...additionalInformation,
         });
     } catch(error) {
         console.log('error creating the user', error.message);
