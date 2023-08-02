@@ -17,22 +17,22 @@ const PaymentForm = () => {
     const currentUser = useSelector(selectCurrentUser);
     const [isProccessingPayment, setIsProccessingPayment] = useState(false);
     
-    const paymentHandler = async (e) =>
+    const paymentHandler = async (e) => {
         e.preventDefault();
-
         if(!stripe || !elements) {
             return;
         }
-
-        setIsProccessingPayment(false);
-
+        setIsProccessingPayment(true);
         const response = await fetch('/.netlify/functions/create-payment-intentt', {
             method: 'post',
             headers: {
                 'Content-Type': 'apllication/json'
             },
-            body: JSON.stringify({ amount: amount * 100 })
-        }).then(res => res.json());
+            body: JSON.stringify({ amount: amount * 100 }),
+        }).then((res) =>  {
+            return res.json();
+        });
+
         const {paymentIntent: { client_secret }} = response;
 
         const paymentResult = await stripe.confirmCardPayment(client_secret, {
@@ -44,12 +44,13 @@ const PaymentForm = () => {
                 }
             }
         })
+         setIsProccessingPayment(false);
 
         if(paymentResult.error) {
-            alert(paymentResult.error);
+            alert(paymentResult.error.message);
         } else {
-            if(paymentResult.paymentIntent.Status === 'succeeded') {
-                alert('PaymentSuccessful');
+            if(paymentResult.paymentIntent.status === 'succeeded') {
+                alert('PaymentSuccessful!');
             }
         }
     };
@@ -66,7 +67,7 @@ const PaymentForm = () => {
         </FormContainer>
      </PaymentFormContainer>
     );
-
+    }
       
 
 
