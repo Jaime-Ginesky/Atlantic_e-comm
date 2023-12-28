@@ -6,4 +6,5 @@ export const MenuContainer = styled.div`
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-between;
+    background-color:#1A1B26;
     `
