@@ -4,15 +4,15 @@ import { MenuContainer } from './category-menu.styles.js';
 const categories = [
     {
       id: 1,
-      title: "hats",
-      imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
-      route: 'shop/hats'
+      title: "tables",
+      imageUrl: "https://s.turbifycdn.com/aah/galafutonsandfurniture/6pc-jamestown-rustic-live-edge-dining-set-25.jpg",
+      route: 'shop/tables'
     },
     {
       id: 2,
-      title: "jackets",
-      imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
-      route: 'shop/jackets'
+      title: "sofas",
+      imageUrl: "https://cdn11.bigcommerce.com/s-hka5gs968s/images/stencil/200x60/products/77347/236439/EEI-3454-LBU_1___34715.1667221463.jpg",
+      route: 'shop/sofas'
     },
     {
       id: 3,
