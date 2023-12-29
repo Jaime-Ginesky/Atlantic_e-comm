@@ -5,33 +5,51 @@ const categories = [
     {
       id: 1,
       title: "tables",
-      imageUrl: "https://s.turbifycdn.com/aah/galafutonsandfurniture/6pc-jamestown-rustic-live-edge-dining-set-25.jpg",
+      imageUrl: "https://media1.popsugar-assets.com/files/thumbor/sdy1jyWxM2zK0Pg3_Z5AKvckAWE/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2022/03/07/839/n/1922794/7d7c4de9a62a4fc0_netimgxXFyEm/i/best-dining-room-tables-west-elm.jpg",
       route: 'shop/tables'
     },
     {
       id: 2,
       title: "sofas",
-      imageUrl: "https://cdn11.bigcommerce.com/s-hka5gs968s/images/stencil/200x60/products/77347/236439/EEI-3454-LBU_1___34715.1667221463.jpg",
+      imageUrl: "https://assets.wfcdn.com/im/66646708/resize-h445%5Ecompr-r85/1933/193351987/Gaige+Twin+78.5%27%27+Upholstered+Convertible+Sofa.jpg",
       route: 'shop/sofas'
     },
     {
       id: 3,
-      title: "sneakers",
-      imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
-      route: 'shop/sneakers'
+      title: "chairs",
+      imageUrl: "https://assets.wfcdn.com/im/64603900/resize-h445%5Ecompr-r85/2619/261930261/Hendrix+Upholstered+Barrel+Chair.jpg",
+      route: 'shop/chairs'
     },
     {
       id: 4,
-      title: "womens",
-      imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
-      route: 'shop/womens'
+      title: "lighting",
+      imageUrl: "https://assets.wfcdn.com/im/92918753/resize-h445%5Ecompr-r85/1414/141404443/Asawer+19+-+Light+Dimmable+Geometric+Chandelier.jpg",
+      route: 'shop/lighting'
     },
     {
       id: 5,
-      title: "mens",
-      imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
-      route: 'shop/mens'
-    }
+      title: "beds",
+      imageUrl: "https://cdn-images.article.com/products/SKU11569/2890x1500/image88587.jpg?w=2740&q=60&fm=webp&fit=max",
+      route: 'shop/beds'
+    },
+    {
+    id: 6,
+      title: "clothing storage",
+      imageUrl: "https://assets.wfcdn.com/im/32829236/resize-h445%5Ecompr-r85/2620/262083463/Keaster+6+-+Drawer+Accent+Chest.jpg",
+      route: 'shop/clothing-storage'
+  },
+  {
+    id: 7,
+      title: "coffee tables",
+      imageUrl: "https://assets.wfcdn.com/im/41548312/resize-h445%5Ecompr-r85/1565/156578785/Anara+Coffee+Table.jpg",
+      route: 'shop/coffee-tables'
+  },
+  {
+    id: 8,
+      title: "desks",
+      imageUrl: "https://img5.su-cdn.com/cdn-cgi/image/width=600,height=600,format=webp/mall/file/2023/05/10/0fa681e8d644f523da43bfebf1d41edf.jpg",
+      route: 'shop/desks'
+  }
   ] 
 const CategoryMenu = () => {
     
