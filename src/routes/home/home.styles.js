@@ -3,5 +3,7 @@ import styled from 'styled-components';
 export const TopHeader=styled.div`
  font-size: 4em;
  color: azure;
- margin-bottom: 3em;
+ margin-bottom: 1em;
+ background-color:#CA7433; 
+ padding: 60px;
 `

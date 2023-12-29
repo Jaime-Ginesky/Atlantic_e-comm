@@ -10,14 +10,15 @@ export const BackgroundImage = styled.div`
 
 
 export const Body = styled.div`   
-   height: 90px; 
-   padding: 0 25px; 
+   height: 100px; 
+   padding: 0 50px; 
+   border-radius:20px;
    display: flex; 
    flex-direction: column; 
    align-items: center; 
    justify-content: center; 
    border: 1px solid black; 
-   background-color: white; 
+   background-color: #CA7433; 
    opacity: 0.7; 
    position: absolute; 
 
