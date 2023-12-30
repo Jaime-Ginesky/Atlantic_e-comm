@@ -11,7 +11,7 @@ export const BackgroundImage = styled.div`
 
 export const Body = styled.div`   
    height: 100px; 
-   padding: 0 50px; 
+   padding: 0 0px; 
    border-radius:20px;
    display: flex; 
    flex-direction: column; 
@@ -44,7 +44,7 @@ export const CategoryMenuItemContainer = styled.div`
    align-items: center; 
    justify-content: center; 
    border: 1px solid black; 
-   margin: 0 7.5px 15px; 
+   margin: 0 4px 7px; 
    overflow: hidden; 
    
   
