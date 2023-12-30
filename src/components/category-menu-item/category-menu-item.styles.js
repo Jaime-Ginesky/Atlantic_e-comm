@@ -10,7 +10,7 @@ export const BackgroundImage = styled.div`
 
 
 export const Body = styled.div`   
-   height: 100px; 
+   height: 70px; 
    padding: 0 0px; 
    border-radius:20px;
    display: flex; 
@@ -25,8 +25,8 @@ export const Body = styled.div`
 
 h2 { 
    font-weight: bold; 
-   margin: 0 6px 0; 
-   font-size: 22px; 
+   margin: 8px 8px 0; 
+   font-size: 16px; 
    color: #4a4a4a; 
    text-transform: uppercase;
 }
@@ -41,8 +41,8 @@ export const CategoryMenuItemContainer = styled.div`
    height: 240px; 
    flex: 1 1 auto; 
    display: flex; 
-   align-items: center; 
-   justify-content: center; 
+   align-items: flex-end; 
+   justify-content: flex-start; 
    border: 1px solid black; 
    margin: 0 4px 7px; 
    overflow: hidden; 
