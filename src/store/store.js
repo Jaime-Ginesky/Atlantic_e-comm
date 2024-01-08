@@ -9,7 +9,7 @@ import logger from 'redux-logger';
 
 import { rootReducer } from './rootreducer';
 
-const middlewares = [process.env.NODE_ENV !== 'production' && logger, thunk].filter(Boolean);
+const middleWares = [process.env.NODE_ENV === 'development' && logger].filter(Boolean);
 
 // const composeEnhancers = 
 // (process.env.NODE_ENV !== 'production' && 
@@ -30,7 +30,7 @@ const middlewares = [process.env.NODE_ENV !== 'production' && logger, thunk].fil
 // export const store = legacy_createStore( persistedReducer, undefined, composedEnhancers);
 export const store = configureStore({
     reducer: rootReducer,
-    middleWare: middlewares 
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(middleWares),
 })
 
 // export const persistor = persistStore(store);

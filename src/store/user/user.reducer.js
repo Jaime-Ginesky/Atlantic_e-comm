@@ -1,4 +1,4 @@
-// import { USER_ACTION_TYPES } from './user.types';
+
 
 import { createSlice } from '@reduxjs/toolkit';
 
@@ -11,7 +11,7 @@ export const userSlice = createSlice({
     initialState: INITIAL_STATE,
     reducers: {
         setCurrentUser(state, action) {
-            state.currentUser = action.payload
+            state.currentUser = action.payload;
         }
     }
 })

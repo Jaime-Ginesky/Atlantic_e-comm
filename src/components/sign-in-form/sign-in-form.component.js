@@ -51,10 +51,10 @@ const SignInForm = () => {
             <span>Sign in with your email and password</span>
             <form onSubmit={handleSubmit}>
               
-              <FormInput label="Email" type="email"required onChange={handleChange} name='email' value={email} />
+              <FormInput label="Email" type="email"required onChange={handleChange} name='email' value={email} autoComplete='on'  />
 
               
-              <FormInput label="Password" type='password'required onChange={handleChange} name='password' value={password} />
+              <FormInput label="Password" type='password' required onChange={handleChange} name='password' value={password} autoComplete='on' />
 
               <ButtonsContainer>
               <Button type="submit">Sign In</Button>

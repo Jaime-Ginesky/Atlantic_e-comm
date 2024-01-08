@@ -1,6 +1,8 @@
-import { useNavigate } from "react-router-dom";
+
 
 import { BackgroundImage, CategoryMenuItemContainer, Body } from "./category-menu-item.styles";
+
+import { useNavigate } from "react-router-dom";
 
 const CategoryMenuItem = ({ category }) => {
     const { imageUrl, title, route } = category;

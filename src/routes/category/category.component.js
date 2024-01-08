@@ -17,16 +17,16 @@ const Category = () => {
     const { category } = useParams();
     const categoriesMap = useSelector(selectCategoriesMap);
     const isLoading = useSelector(selectCategoriesIsLoading);
-    const [products, setProducts] = useState(categoriesMap[category]);
+    const [products, setProducts] = useState([]);
    
 
     useEffect(() => {
         setProducts(categoriesMap[category]);
     }, [category, categoriesMap]);
-    useEffect(() => {
-        addCollectionAndDocuments('categories', SHOP_DATA)
-    }, []);
-
+    
+    // useEffect(() => {
+    //     addCollectionAndDocuments('categories', SHOP_DATA)
+    // }, []);
     return (
        <Fragment>
         <CategoryTitle>{category.toUpperCase()}</CategoryTitle>
