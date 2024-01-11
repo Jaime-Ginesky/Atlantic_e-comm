@@ -2,15 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { StyleSheetManager } from 'styled-components';
-// import { Provider } from 'react-redux';
-import { ProductsProvider } from './contexts/products.context';
-import { CartProvider } from './contexts/cart.context';
-import { UserProvider } from './contexts/user.context';
+import { Provider } from 'react-redux';
 // import { PersistGate } from 'redux-persist/integration/react';
 // import { Elements } from '@stripe/react-stripe-js';
 
 import App from './App';
-// import { store } from './store/store';
+import { store } from './store/store';
 // import { stripePromise } from './utils/stripe/stripe.utils';
 
 import './index.scss';
@@ -22,21 +19,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    <StyleSheetManager shouldForwardProp={() => true}>
-    {/* <Provider store={store}> */}
+    <Provider store={store}>
      {/* <PersistGate loading={null} persistor={persistor}> */}
       <BrowserRouter>
-      <UserProvider>
-       <ProductsProvider>
-        <CartProvider>
        {/* <Elements stripe={stripePromise}> */}
         <App />
         {/* </Elements> */}
-         </CartProvider>
-        </ProductsProvider>
-        </UserProvider>
        </BrowserRouter>
       {/* </PersistGate> */}
-     {/* </Provider>   */}
+     </Provider>  
     </StyleSheetManager>
    </React.StrictMode>
 );
