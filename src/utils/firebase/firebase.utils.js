@@ -15,8 +15,8 @@ import {
     doc,
     getDoc,
     setDoc,
-    // collection,
-    // writeBatch,
+    collection,
+    writeBatch,
     // query,
     // getDocs
 } from 'firebase/firestore';
@@ -46,18 +46,18 @@ const firebaseConfig = {
 
   export const db = getFirestore();
 
-  // export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
-  //   const collectionRef = collection(db, collectionKey);
-  //   const batch = writeBatch(db);
+  export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
+    const collectionRef = collection(db, collectionKey);
+    const batch = writeBatch(db);
 
-  //   objectsToAdd.forEach((object) => {
-  //     const docRef = doc(collectionRef, object.title.toLowerCase());
-  //     batch.set(docRef, object);
-  //   })
+    objectsToAdd.forEach((object) => {
+      const docRef = doc(collectionRef, object.title.toLowerCase());
+      batch.set(docRef, object);
+    })
 
-  //   await batch.commit();
-  //   console.log('done');
-  // }
+    await batch.commit();
+    console.log('done');
+  }
  
   // export const getCategoriesAndDocuments = async () => {
   //    const collectionRef = collection(db, 'categories');
