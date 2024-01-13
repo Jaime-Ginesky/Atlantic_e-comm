@@ -6,9 +6,8 @@ import ProductCard from '../../components/product-card/product-card.component';
 import Spinner from '../../components/spinner/spinner.component';
 
 import { selectCategoriesMap, selectIsLoading } from '../../store/categories/category.selector';
-// import PRODUCTS from '../../shop-data.js'; 
 import { CategoryTitle, CategoryContainer } from './category.styles.js';
-// import { CategoriesContext } from '../../contexts/categories.context';
+
 // import { addCollectionAndDocuments } from '../../utils/firebase/firebase.utils';
 
 /* Category takes the category name from the url parameter, then pulls off the categories map
@@ -18,7 +17,6 @@ const Category = () => {
     const { category } = useParams();
     const categoriesMap = useSelector(selectCategoriesMap);
     const isLoading = useSelector(selectIsLoading);
-    // const { categoriesMap } = useContext(CategoriesContext);
     const [products, setProducts] = useState(categoriesMap[category]);
    
 

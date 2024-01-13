@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { StyleSheetManager } from 'styled-components';
 import { Provider } from 'react-redux';
-import { PersistGate } from 'redux-persist/integration/react';
+// import { PersistGate } from 'redux-persist/integration/react';
 // import { Elements } from '@stripe/react-stripe-js';
 
 import App from './App';
-import { store, persistor } from './store/store';
+import { store } from './store/store';
 // import { stripePromise } from './utils/stripe/stripe.utils';
 
 import './index.scss';
@@ -20,13 +20,13 @@ root.render(
   <React.StrictMode>
    <StyleSheetManager shouldForwardProp={() => true}>
     <Provider store={store}>
-     <PersistGate loading={null} persistor={persistor}>
+     {/* <PersistGate loading={null} persistor={persistor}> */}
       <BrowserRouter>
        {/* <Elements stripe={stripePromise}> */}
         <App />
         {/* </Elements> */}
        </BrowserRouter>
-      </PersistGate>
+      {/* </PersistGate> */}
      </Provider>  
     </StyleSheetManager>
    </React.StrictMode>
