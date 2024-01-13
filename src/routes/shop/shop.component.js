@@ -5,10 +5,10 @@ import { Route, Routes } from 'react-router-dom'
 import { useDispatch } from 'react-redux';
 // import ProductCard from '../../components/product-card/product-card.component';
 // import { ProductsContext } from '../../contexts/products.context';
-// import CategoriesPreview from '../categories-preview/categories-preview.component';
+import CategoriesPreview from '../categories-preview/categories-preview.component';
 import Category from '../category/category.component';
-import { getCategoriesAndDocuments } from '../../utils/firebase/firebase.utils';
-import { setCategories } from '../../store/categories/category.reducer';
+// import { getCategoriesAndDocuments } from '../../utils/firebase/firebase.utils';
+import { fetchCategoriesAsync } from '../../store/categories/category.action';
 
 
 const Shop = () => {
@@ -18,14 +18,21 @@ const Shop = () => {
   // useEffect(() => {
   //   dispatchEvent(fetchCategoriesStart());
   // }, []);
-  useEffect(() => {
-     const getCategoriesMap = async () => {
-      const categoriesArray = await getCategoriesAndDocuments('categories');
-        dispatch(setCategories(categoriesArray));
-    };
 
-    getCategoriesMap();
-  },[]);
+  useEffect(() => {
+      dispatch(fetchCategoriesAsync());
+  }, []);
+
+  //   getCategoriesMap();
+  // }, []);
+  // useEffect(() => {
+  //    const getCategoriesMap = async () => {
+  //     const categoriesArray = await getCategoriesAndDocuments('categories');
+  //       dispatch(setCategories(categoriesArray));
+  //   };
+
+  //   getCategoriesMap();
+  // },[]);
 
   return (
   //   <div className ='products-container'>
@@ -36,7 +43,7 @@ const Shop = () => {
   // );
     
     <Routes>
-      {/* <Route index element={<CategoriesPreview />} /> */}
+      <Route index element={<CategoriesPreview />} />
       <Route path=':category' element={<Category />} />
     </Routes>
  );
