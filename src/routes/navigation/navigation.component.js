@@ -10,7 +10,7 @@ import CartDropdown from '../../components/cart-dropdown/cart-dropdown.component
 import { selectCurrentUser } from '../../store/user/user.selector';
 import { selectIsCartOpen } from '../../store/cart/cart.selector';
 
-import { ReactComponent as CrwnLogo } from '../../assets/crown.svg';
+import { ReactComponent as WaterLogo } from '../../assets/water.svg';
 import { signOutUser } from '../../utils/firebase/firebase.utils';
 
 import { NavigationContainer, NavLinks, NavLink, LogoContainer } from './navigation.styles';
@@ -28,7 +28,7 @@ const Navigation = () => {
     <Fragment>
         <NavigationContainer>
             <LogoContainer to='/'>
-                <CrwnLogo className='logo' />
+                <WaterLogo className='logo' />
             </LogoContainer>
             <NavLinks>
                 <NavLink to='/shop'>
