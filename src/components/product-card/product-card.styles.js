@@ -39,13 +39,16 @@ export const Footer = styled.div`
         display: flex; 
         justify-content: space-between; 
         font-size: 18px;
+        color: #FFF;
         `;
   
 export const Name = styled.span` 
             width: 90%; 
             margin-bottom: 15px; 
+            color: #FFF;
         `;
 
 export const Price = styled.span`
    width: 10%; 
+   color: #FFF;
 `;

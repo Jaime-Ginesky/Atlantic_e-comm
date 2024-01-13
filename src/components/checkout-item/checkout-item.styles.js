@@ -19,18 +19,23 @@ export const CheckoutItemContainer = styled.div`
         `
         export const BaseSpan = styled.span` 
             width: 23%; 
+            color: #FFF;
         `
         export const Quantity = styled(BaseSpan)` 
             display: flex;
+            color: #FFF;
             `
         export const Arrow = styled.div` 
                 cursor: pointer; 
+                color: #FFF;
             `
         export const Value = styled.span` 
                 margin: 0 10px; 
+                color: #FFF;
              `
         
        export const RemoveButton = styled.div` 
             padding-left: 12px; 
             cursor: pointer; 
+            color: #FFF;
 }`
