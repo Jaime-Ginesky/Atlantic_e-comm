@@ -10,7 +10,7 @@ export const CpContainer = styled.div`
     
 export const Title = styled(Link)`
         font-size: 28px; 
-        margin-bottom: 25px; 
+        margin: 25px; 
         cursor: pointer; 
     `;
     

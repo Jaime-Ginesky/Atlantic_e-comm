@@ -10,16 +10,15 @@ export const BackgroundImage = styled.div`
 
 
 export const Body = styled.div`   
-   height: 70px; 
-   padding: 0 0px; 
-   border-radius:20px;
+   height: 240px; 
+   padding:  4px 4px; 
    display: flex; 
    flex-direction: column; 
    align-items: center; 
    justify-content: center; 
    border: 1px solid black; 
-   background-color: #CA7433; 
-   opacity: 0.7; 
+   background-color:#e1d3cd; 
+   opacity: 0.5; 
    position: absolute; 
 
 
@@ -44,7 +43,7 @@ export const CategoryMenuItemContainer = styled.div`
    align-items: flex-end; 
    justify-content: flex-start; 
    border: 1px solid black; 
-   margin: 0 4px 7px; 
+   margin:  4px 4px;
    overflow: hidden; 
    
   

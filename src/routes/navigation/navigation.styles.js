@@ -7,6 +7,10 @@ export const NavigationContainer = styled.div`
  display: flex; 
  justify-content: space-between; 
  margin-bottom: 30px; 
+//  background: rgb(240,105,50);
+//  background: radial-gradient(circle, rgba(240,105,50,1) 6%, rgba(9,7,2,1) 76%);
+ background: rgb(210,210,209);
+background: radial-gradient(circle, rgba(210,210,209,1) 3%, rgba(16,4,22,1) 87%);
 `
 ;
 
@@ -35,6 +39,7 @@ export const NavLinks = styled.div`
 export const NavLink = styled(Link)`
   padding: 10px 15px;
   cursor:pointer;
+  color: #FFF;
 `;
   
 /* .navigation { 
