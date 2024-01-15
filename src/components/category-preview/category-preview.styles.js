@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export const CpContainer = styled.div` 
     display: flex; 
     flex-direction: column; 
-    margin-bottom: 30px; 
+    margin: 0 20px 30px 20px; 
    `;
     
 export const Title = styled(Link)`

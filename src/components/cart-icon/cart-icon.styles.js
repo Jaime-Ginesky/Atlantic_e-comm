@@ -9,6 +9,7 @@ export const CartIconContainer = styled.div`
     align-items: center; 
     justify-content: center; 
     cursor: pointer; 
+    margin: 4px 0;
     
     svh {
         width: 24px;

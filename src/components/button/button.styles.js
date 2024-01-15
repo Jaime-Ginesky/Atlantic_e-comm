@@ -20,6 +20,7 @@ export const BaseButton = styled.button`
     border: none; 
     cursor: pointer; 
     display: flex; 
+
     justify-content: center; 
     align-items: center;
     
