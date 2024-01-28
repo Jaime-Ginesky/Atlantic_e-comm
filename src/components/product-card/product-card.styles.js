@@ -4,9 +4,11 @@ export const ProductCardContainer = styled.div`
     width: 100%; 
     display: flex; 
     flex-direction: column; 
-    height: 350px; 
+    height: auto; 
     align-items: center; 
     position: relative; 
+    background: #d3c9c9;
+    
     
     img { 
         width: 100%; 
@@ -38,7 +40,7 @@ export const Footer = styled.div`
         height: 5%; 
         display: flex; 
         justify-content: space-between; 
-        font-size: 18px;
+        font-size: 8px;
         color: #FFF;
         `;
   

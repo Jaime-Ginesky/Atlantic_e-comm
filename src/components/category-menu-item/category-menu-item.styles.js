@@ -10,14 +10,14 @@ export const BackgroundImage = styled.div`
 
 
 export const Body = styled.div`   
-   height: 240px; 
+   height: 80px; 
    padding:  4px 4px; 
    display: flex; 
    flex-direction: column; 
    align-items: center; 
    justify-content: center; 
    border: 1px solid black; 
-   background-color:#e1d3cd; 
+   background-color: #e1d3cd;
    opacity: 0.5; 
    position: absolute; 
 
@@ -37,7 +37,7 @@ p {
 `
 export const CategoryMenuItemContainer = styled.div` 
    min-width: 30%; 
-   height: 240px; 
+   height: 200px; 
    flex: 1 1 auto; 
    display: flex; 
    align-items: flex-end; 
@@ -45,6 +45,7 @@ export const CategoryMenuItemContainer = styled.div`
    border: 1px solid black; 
    margin:  4px 4px;
    overflow: hidden; 
+   background-color: #d3c9c9;
    
   
     &:hover {

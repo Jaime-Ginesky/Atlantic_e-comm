@@ -5,11 +5,12 @@ import { Link } from 'react-router-dom';
 export const CpContainer = styled.div` 
     display: flex; 
     flex-direction: column; 
-    margin: 0 20px 30px 20px; 
+    margin: 20px 20px 30px 20px;
+    background-color: #d3c9c9; 
    `;
     
 export const Title = styled(Link)`
-        font-size: 28px; 
+        font-size: 20px; 
         margin: 25px; 
         cursor: pointer; 
     `;

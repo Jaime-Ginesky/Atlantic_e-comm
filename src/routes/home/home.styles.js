@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const TopHeader=styled.div`
- font-size: 2em;
+font-size: calc(3vw + .4em); 
  font-style:oblique;
  letter-spacing: 1.5rem;
  color: azure;
@@ -19,7 +19,7 @@ flex: 1 1 auto;
 justify-content: center;
 position: relative;
 font-weight: bold; 
-font-size: 206px; 
+font-size: calc(3vw + 1em); 
 color: #4a454c;
 text-transform: uppercase;
 letter-spacing: 1.5rem;

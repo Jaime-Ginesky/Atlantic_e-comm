@@ -7,7 +7,6 @@ import CartItem from '../cart-item/cart-item.component';
 import { CartDropdownContainer, CartItems, EmptyMessage, } from './cart-dropdown.styles.js';
 
 const CartDropdown = () => {
-    // const { cartItems } = useContext(CartContext);
     const cartItems = useSelector(selectCartItems);
     const navigate = useNavigate();
 

@@ -10,9 +10,7 @@ export const CATEGORIES_INITIAL_STATE = {
 
 export const categoriesSlice = createSlice({
     name: 'categories',
-    initialState: {
-        categoriesArray: [],
-    },
+   
     initialState: CATEGORIES_INITIAL_STATE,
     reducers: {
         setCategories(state, action) {

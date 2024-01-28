@@ -1,7 +1,7 @@
  import styled from 'styled-components';
 
  export const CheckoutContainer = styled.div`
- width: 55%; 
+ width: 80%; 
  min-height: 90vh; 
  display: flex; 
  flex-direction: column; 
@@ -28,7 +28,7 @@
  export const CheckoutTotal = styled.span`
  margin-top: 30px; 
  margin-left: auto; 
- font-size: 36px; 
+ font-size: calc(2vw + .5em); 
  color: #FFF;
  `;
 
