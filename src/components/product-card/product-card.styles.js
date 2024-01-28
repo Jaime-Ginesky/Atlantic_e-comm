@@ -21,7 +21,7 @@ export const ProductCardContainer = styled.div`
         width: 80%; 
         opacity: 0.7; 
         position: absolute; 
-        top: 255px; 
+        top: 140px; 
         display: none; 
     } 
     

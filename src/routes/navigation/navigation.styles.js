@@ -19,7 +19,7 @@ export const LogoContainer = styled(Link)`
 ;
 
 export const NavLinksContainer = styled.div`
-    width: 50%; 
+    width: 100%; 
     height: 100%; 
     display: flex; 
     align-items: center; 
@@ -28,14 +28,15 @@ export const NavLinksContainer = styled.div`
 ;
 
 export const NavLinks = styled.div`
- padding: 10px 15px; 
+ padding: 10px 10px; 
  cursor: pointer; 
 `
 ;
 
 export const NavLink = styled(Link)`
-  padding: 10px 15px;
+  padding: 10px 10px;
   cursor:pointer;
   color: #FFF;
+  font-size: calc(.5vw + .2em);
 `;
   

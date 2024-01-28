@@ -55,7 +55,7 @@ const SignUpForm = () => {
     return (
         <SignUpContainer>
             <h2>Don't have an account?</h2>
-            <span>Sign up with your email and password</span>
+            <p>Sign up with your email and password</p>
             <form onSubmit={handleSubmit}>
               <FormInput label="Display Name" type="text" required onChange={handleChange} name='displayName' value={displayName} />
 
