@@ -6,8 +6,10 @@ export const NavigationContainer = styled.div`
  width: 100%; 
  display: flex; 
  justify-content: space-between; 
- background: rgb(206,206,206);
- background: radial-gradient(circle, rgba(206,206,206,1) 1%, rgba(4,1,6,1) 91%);
+background: #552532;
+background: linear-gradient(90deg, #552532, #E3E863);
+//  background: rgb(206,206,206);
+//  background: radial-gradient(circle, rgba(206,206,206,1) 1%, rgba(4,1,6,1) 91%);
 `
 ;
 
@@ -36,7 +38,7 @@ export const NavLinks = styled.div`
 export const NavLink = styled(Link)`
   padding: 10px 10px;
   cursor:pointer;
-  color: #FFF;
+  color: #5F3336;
   font-size: calc(.5vw + .2em);
 `;
   

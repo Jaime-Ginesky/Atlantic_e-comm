@@ -45,7 +45,6 @@ export const CategoryMenuItemContainer = styled.div`
    border: 1px solid black; 
    margin:  4px 4px;
    overflow: hidden; 
-   background-color: #d3c9c9;
    
   
     &:hover {
