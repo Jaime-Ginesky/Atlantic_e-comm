@@ -8,8 +8,6 @@ export const NavigationContainer = styled.div`
  justify-content: space-between; 
 background: #552532;
 background: linear-gradient(90deg, #552532, #E3E863);
-//  background: rgb(206,206,206);
-//  background: radial-gradient(circle, rgba(206,206,206,1) 1%, rgba(4,1,6,1) 91%);
 `
 ;
 

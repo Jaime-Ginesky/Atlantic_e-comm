@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 
 export const ProductCardContainer = styled.div` 
-    width: 100%; 
+    width: 80%; 
+    padding: 0;
+    margin: 100px 10px;
     display: flex; 
     flex-direction: column; 
+    gap: 10px;
     height: auto; 
     align-items: center; 
     position: relative; 
